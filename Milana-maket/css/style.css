@@ -1,0 +1,369 @@
+
+  body{
+    margin: 0;
+    padding: 0;  
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    background-color: #E5E5E5;
+    color: #85888C;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-weight: 900;
+    font-size: 84px;
+    line-height: 73px;
+    color: white;
+}
+h2{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    color: #3B3E44;
+}
+p{
+    font-size: 16px;
+    line-height: 22px;
+}
+.main-navigation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:  #FFFFFF;
+}
+
+.up-navigation{
+/*    width: 604px;*/
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2D383F;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.up-navigation a {
+    display: block;
+    padding-top:25px;
+    padding-bottom:26px;
+    margin-right: 65px;
+}
+.up-navigation a:last-child{
+    margin-right: 65px;
+}
+.up-navigation select {
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 26px;
+    margin-right: 65px;
+    width: 131px;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: url('../img/chevron1.png')no-repeat right center;
+    outline: 0;
+    background-position-x: 120px;
+}
+
+.user-navigation{
+    width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.user-navigation a{
+    display: block;
+    padding-top: 25px;
+    padding-right: 34px;
+}
+.user-navigation .request{
+    background: url('../img/Vector1.png')no-repeat left center;
+    outline: 0;
+    background-position-x: 0px;
+    background-position-y: 28px;
+    padding-right: 0px;
+    text-align:right;
+    width: 146px;
+}
+hr{
+    color: #E6E6E6;
+    size:1px;
+    margin: 0px;
+    width: calc(100vw + 100%);
+    transform: translateX(-50%);
+}
+.sub-navigation{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sub-navigation a{
+    display: block;
+    margin-right: 60px;
+    padding-top: 15px;
+    padding-bottom: 17px;
+}
+.sub-navigation .navigation-current{
+    border-bottom: 2px solid #2C87F2;
+    color: #2C87F2;
+}
+
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    background: #2C87F2;
+    color: white;
+    width: 233px;
+    height: 50px;
+    font: inherit;
+	text-align: center;
+    vertical-align: middle;
+    border-radius: 3px;
+}
+
+/*сеточные черновик*/
+.main-header{
+    background-color:#FFFFFF;
+    z-index: 100;
+    top: 0;
+    position: sticky;
+}
+.navigation-wrapper{
+    width: 1110px;
+}
+ .main-header-logo{
+    display: inline-block;
+    margin-right: 65px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+ }
+
+.container{
+    width: 1110px;
+    margin: 0 auto;
+	padding: 0 10px;
+} 
+.navigation-wrapper .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*стили main*/
+/*стили панели*/
+.nav-filter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    width: 100vw;
+    margin-left: -50vw;
+    background-image: url(../img/fon.jpg);
+    background-repeat: no-repeat;
+    margin-bottom: 70px;
+}
+.filterfl{
+    margin-top: 267px;
+    margin-bottom: 89px;
+    min-height: 380px;
+}
+.filterfl h1{
+    margin-bottom: 75px;
+    font-family: 'Fira Sans', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 84px;
+    line-height: 73px;
+}
+.filter-space{
+    background-color: white;
+    width: 1110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+.filter-panel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #3B3E44;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /*временно*/
+    min-height: 129px;
+}
+.filter-panel select {
+    padding: 16px 20px;
+    margin-right: 30px;
+    min-height: 50px;
+    width: 233px;
+    background-color: #F2F4F7;
+    border-radius: 3px;
+    border: none;
+
+    -webkit-appearance: none;
+    appearance: none;
+    background: url('../img/Chevron.png')no-repeat right center #F2F4F7;
+    outline: 0;
+    background-position-x: 195px;
+
+}  
+.filter-panel:nth-child(1n) {
+    margin-left:45px;
+}
+
+.filter-panel a{
+    width: 232px;
+}
+.filter-space .button{
+    margin-right: 43px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: url('../img/Vector.png')no-repeat left center #2C87F2;
+    outline: 0;
+    background-position-x: 65px;
+}
+
+.reset-filter{
+    float: right;
+    color: #FFFFFF;
+}
+.page-title{
+    margin: 0;
+    margin-bottom: 45px;
+    padding: 0;
+}
+
+
+/*стили каталога*/
+.catalog{
+    width: 1110px;
+    margin-bottom: 92px;
+}
+
+.catalog-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.catalog-item{
+    border-radius: 3px;
+    width: 350px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    min-height: 388px;
+    background: #FFFFFF;
+}
+.catalog-item:nth-child(3n){
+    margin-right: 0;
+}
+
+.catalog-item:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.catalog-item img{
+    border-radius: 3px;
+}
+.description{
+    margin-top: 25px;
+    margin-left: 30px;
+    margin-bottom: 26px;
+}
+.feature1{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 5px;
+}
+.feature2{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 26px;
+    color: #85888C;
+}
+.price{
+    color: #3B3E44;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+}
+.catalog-item a{
+ color:#2C87F2;
+}
+
+.fist-image{
+    position: relative;
+}
+.fist-image h2{
+    position: absolute;
+    top: 250px;
+    color: white;
+    width:100%;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+
+/*стили  activities*/
+.activities{
+    width: 1110px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+.activities-info{
+    width: 540px;
+}
+.activities-picture{
+    width: 487px;   
+}
+.activities-info .page-title{
+    margin-top: 15px;
+    margin-bottom: 45px;
+}
+
+.activities-item{
+    margin: 0;
+    margin-bottom: 30px;
+    font-family: 'Fira Sans', sans-serif;;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+
+
+
+/*стили  new-offers*/
+.new-offers{
+    width: 1110px;
+}
+.options{
+display: flex;
+justify-content: space-between;
+margin-right:30px ;
+}
