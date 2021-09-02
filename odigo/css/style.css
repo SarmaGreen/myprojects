@@ -32,3 +32,44 @@ html{
 *, *::before, *::after{
     box-sizing: inherit;
 }
+body{
+    font-family: lato;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #102746;
+}
+.wrapper{
+    max-width: 1060px;
+    margin: 0 auto;
+}
+.header{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.header_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.header_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.header_item{
+    margin-right: 82px;
+}
+.header_item:last-child{
+    margin-right: 0px;
+}
+.header_link{
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+    text-decoration: none;
+}
