@@ -83,7 +83,7 @@ body{
 /*main*/
 
 .intro{
-    height: 100vh;
+    min-height: 100vh;
     background: url(../img/introbg.jpg) no-repeat center;
     background-size: cover;
     padding-top: 263px;
@@ -107,8 +107,32 @@ body{
     flex-wrap: wrap;
 }
 .search-form-field{
-    background: transparent url(../img/svg/Oval.svg) no-repeat left;
-    background-size: contain;
+    width: 297px;
+    font-weight: 500;
+    font-size: 18px;
+    color:white;
+    background: transparent url(../img/svg/Oval.svg) no-repeat left 7px;
+    background-size: 20px;
     border: 0;
     border-bottom:2px solid #BFC0C5;
+    margin-right: 60px;
+    padding-left: 43px;
+    padding-bottom: 22px;
+}
+.search-form-field::placeholder{
+    font-weight: 500;
+    font-size: 18px;
+    color:white;
+}
+.search-form-submit{
+    padding: 15px 39px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+    background-color: #1B7DFF;
+    border: 0;
+}
+.search-form-submit:hover, .search-form-submit:focus, .search-form-submit:active{
+    background-color: #0e68da;
 }
