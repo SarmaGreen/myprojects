@@ -96,3 +96,19 @@ body{
     color: white;
     margin-bottom: 22px;
 }
+.intro_subtitle{
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 59px;
+}
+.search-form-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+.search-form-field{
+    background: transparent url(../img/svg/Oval.svg) no-repeat left;
+    background-size: contain;
+    border: 0;
+    border-bottom:2px solid #BFC0C5;
+}
