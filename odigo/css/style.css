@@ -234,3 +234,22 @@ img{
 .benefits_card-link:hover, .benefits_card-link:focus {
     background: url(../img/svg/shape.svg) no-repeat right center;
 }
+
+.places_caption{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 36px;
+}
+.places_view{
+    font-size: 16px;
+    line-height: 24px;
+    color: #006DFE;
+    text-decoration: none;
+    padding-right: 59px;
+    background: url(../img/svg/shape.svg) no-repeat right center;
+}
+.places_view:hover, .places_view:focus{
+    opacity: .65;
+}
