@@ -234,6 +234,9 @@ img{
 .benefits_card-link:hover, .benefits_card-link:focus {
     background: url(../img/svg/shape.svg) no-repeat right center;
 }
+.places{
+    margin-bottom: 131px;
+}
 .places-title{
     margin-right: 15px;
 }
