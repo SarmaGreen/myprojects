@@ -350,3 +350,22 @@ img{
 .tour__more:hover, .tour__more:focus{
     opacity: .65;
 }
+
+
+/*
+top places style
+*/
+.top_places{
+    margin-bottom: 144px;
+}
+.top-title{
+    margin-bottom: 64px;
+}
+
+.places-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
