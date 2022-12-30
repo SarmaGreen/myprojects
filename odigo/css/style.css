@@ -351,10 +351,57 @@ img{
     opacity: .65;
 }
 
-
+/*setka styles*/
+.top{
+    margin-bottom: 86px;
+}
+.top_title{
+    margin-bottom:54px;
+}
+.top_cards{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-gap: 57px;
+}
+.top_card-pic{
+    position: relative;
+}
+.top_card-stats{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(21, 24, 36, 0.6);
+    padding: 16px 25px;
+}
+.top_card-title{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+}
+.top_card-likes{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    padding-right:20px;
+    background: url(/img/svg/like.svg) no-repeat right;
+}
+.top_card-comments{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    padding-right:23px;
+    background: url(/img/svg/comico.svg) no-repeat right;
+}
 /*
 top places style
-*/
+
 .top_places{
     margin-bottom: 86px;
 }
@@ -369,3 +416,4 @@ top places style
     display: flex;
     flex-wrap: wrap;
 }
+*/
