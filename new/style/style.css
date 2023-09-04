@@ -19,8 +19,11 @@ html {
   }
   .header-container{
     display: flex;
-    width: 1440px;
-    padding: 104px 133px 168px;
+    width: 1520px;
+    padding-top: 104px;
+    padding-left: 133px;
+    padding-right: 133px;
+    padding-bottom: 168px;
     background-color: #F8F8F8;
   }
   .header-title{
