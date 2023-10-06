@@ -37,8 +37,43 @@
       text-transform: uppercase;
       font-weight: 700;
       color: $light-brown;
+      transition: .2s;
       &:hover{
         color:$orange;
       }
+    }
+    &__btn {
+      background-color: transparent;
+      border: none;
+      font-weight: 700;
+      font-size: 20px;
+      color: $orange;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      &::before {
+        content: '';
+        background-image: url(../img/geo.svg);
+        width: 20px;
+        height: 29px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        margin-right: 19px;
+      }
+    }
+  }
+  .container{
+    max-width: 1350px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+  .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__title{
+      
     }
   }

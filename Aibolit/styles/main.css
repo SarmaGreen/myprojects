@@ -33,7 +33,41 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   color: #C3B9B5;
+  transition: 0.2s;
 }
 .header__link:hover {
   color: #FFC59E;
+}
+.header__btn {
+  background-color: transparent;
+  border: none;
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFC59E;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+.header__btn::before {
+  content: "";
+  background-image: url(../img/geo.svg);
+  width: 20px;
+  height: 29px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  margin-right: 19px;
+}
+
+.container {
+  max-width: 1350px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }/*# sourceMappingURL=main.css.map */
