@@ -15,7 +15,7 @@
     max-width: 1350px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 auto;
+    margin: 65px auto 130px;
     &__logo{
       background-image: url(../img/logo.svg);
       background-repeat: no-repeat;
@@ -26,6 +26,7 @@
     &__list {
       display: flex;
       list-style-type:none;
+      padding-left: 0;
     }
     &__item {
       margin-left: 35px;
@@ -74,6 +75,41 @@
     align-items: center;
     justify-content: space-between;
     &__title{
-      
+      font-size: 80px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.5;
+      color: $dark;
+    }
+    &__link{
+      background-color: $orange;
+      box-shadow: 0px 4px 20px 0px $orange;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 20px;
+      color:  $white;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 24px 70px;
+      border-radius: 33.5px;
+    }
+    &__social{
+      margin-top: 200px;
+    }
+  }
+  .social{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 0;
+    &__item{
+      margin-right: 50px;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+    &__svg{
+      fill:$light-brown;
     }
   }
