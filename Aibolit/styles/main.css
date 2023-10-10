@@ -110,4 +110,16 @@ body {
 }
 .social__svg {
   fill: #C3B9B5;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.grid__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 220px;
 }/*# sourceMappingURL=main.css.map */

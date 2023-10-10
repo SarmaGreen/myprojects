@@ -113,3 +113,14 @@
       fill:$light-brown;
     }
   }
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    &__item{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 220px;
+    }
+  }
