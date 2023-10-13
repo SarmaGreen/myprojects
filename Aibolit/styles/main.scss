@@ -122,5 +122,15 @@
       flex-direction: column;
       justify-content: space-between;
       height: 220px;
+      position: relative;
+      border-radius: 20px;
+      box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.1);
+      padding: 24px;
+    }
+    &__svg{
+      fill:$orange;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
     }
   }
