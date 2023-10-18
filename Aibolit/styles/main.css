@@ -207,7 +207,12 @@ body {
   background-color: rgb(255, 254, 254);
   bottom: -230px;
   left: -100px;
-  border-radius: 18px;
+  border-radius: 45px;
+}
+.app__reglink {
+  margin-left: 75px;
+  text-decoration: none;
+  color: #FFC59E;
 }
 
 .download {
@@ -240,4 +245,37 @@ body {
   background-size: cover;
   top: 155px;
   left: 120px;
+}
+
+form {
+  padding-top: 220px;
+  max-width: 300px;
+  min-width: 300px;
+  margin: 0 auto;
+  background-color: rgb(255, 254, 254);
+}
+
+fieldset {
+  border: 0;
+}
+
+input {
+  display: block;
+  border-radius: 60px;
+  border: none;
+  color: #676665;
+  background-color: #ede9e8;
+  width: 200px;
+  height: 40px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input[type=submit] {
+  background-color: #FFC59E;
+  color: #FFFBF9;
+  width: 216px;
+  height: 40px;
 }/*# sourceMappingURL=main.css.map */
