@@ -116,6 +116,9 @@ body {
 .social__svg {
   fill: #C3B9B5;
 }
+.social__svg_white {
+  fill: #FFFFFF;
+}
 
 .grid {
   display: grid;
@@ -278,4 +281,20 @@ input[type=submit] {
   color: #FFFBF9;
   width: 216px;
   height: 40px;
+}
+
+.footer {
+  background-color: #59443F;
+}
+.footer__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__logo {
+  background-image: url(../img/logofooter.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90px;
+  height: 90px;
 }/*# sourceMappingURL=main.css.map */

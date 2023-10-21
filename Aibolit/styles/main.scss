@@ -115,6 +115,9 @@
     }
     &__svg{
       fill:$light-brown;
+      &_white {
+        fill:$white;
+      }
     }
   }
   .grid{
@@ -270,4 +273,19 @@ input[type=submit]{
   color: #FFFBF9;
   width: 216px;
   height: 40px;
+}
+.footer{
+  background-color: $brown;
+  &__box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo{
+    background-image: url(../img/logofooter.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:90px;
+    height:90px;
+  }
 }
