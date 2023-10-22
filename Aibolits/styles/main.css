@@ -231,6 +231,11 @@ body {
   margin-top: 45px;
   margin-bottom: 358px;
 }
+.download__link_xs {
+  margin-bottom: 70px;
+  width: 140px;
+  height: 41px;
+}
 .download__appstore {
   background-image: url(../img/apple.svg);
   margin-right: 28px;

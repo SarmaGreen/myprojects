@@ -226,6 +226,11 @@
     display: block;
     margin-top: 45px;
     margin-bottom: 358px;
+    &_xs {
+      margin-bottom:70px;
+      width: 140px;
+      height: 41px;
+    }
   }
   &__appstore{
     background-image:url(../img/apple.svg);
