@@ -8,3 +8,4 @@ document.querySelectorAll('.slider').forEach((n, i) => {
 		slidesOffsetBefore: -125
 	})
 })
+bindSwipers(slider1, slider2, slider3, slider4)
