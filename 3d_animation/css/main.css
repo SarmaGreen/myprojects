@@ -89,10 +89,9 @@ body{
   }
 
   .items .item:active, .items .item:focus{
-    width: 28vh;
+    width: 34vh;
     filter: inherit;
     transform: translateZ(calc(var(--index) * 10));
     z-index: 100;
     margin: 0 .45vh;
-
   }
