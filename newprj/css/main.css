@@ -108,10 +108,27 @@ a:hover {
   background-color: blue;
 }
 
+.text-right {
+  text-align: right;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
 .header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 74px;
   min-height: 840px;
   background: linear-gradient(180deg, #242B33 12%, rgba(45, 52, 60, 0.38) 51%, #242B33 92%), url("./../IMG/header/headerBg.jpg");
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -124,6 +141,29 @@ a:hover {
   align-items: center;
 }
 
+.header__title {
+  position: relative;
+  padding-bottom: 121px;
+  text-align: center;
+  font-size: 48px;
+  font-family: "Playfair Display", serif;
+  color: #D4C17F;
+  font-weight: 700;
+}
+
+.header__title-icon {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.header__footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
 .nav {
   font-size: 14px;
 }
@@ -132,4 +172,27 @@ a:hover {
   display: flex;
   -moz-column-gap: 40px;
        column-gap: 40px;
+}
+
+.info {
+  position: relative;
+  font-size: 18px;
+}
+.info--map, .info--tel {
+  padding-left: 35px;
+}
+.info--map::before, .info--tel::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 21px;
+  height: 21px;
+  background-repeat: no-repeat;
+}
+.info--map::before {
+  background-image: url("./../../IMG/Group.svg");
+}
+.info--tel::before {
+  background-image: url("./../../IMG/phone.svg");
 }/*# sourceMappingURL=main.css.map */
