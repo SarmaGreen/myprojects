@@ -15,8 +15,11 @@ a{
 .container{
   margin: 0 auto;
   padding:0 15px;
-  width: 1140px;
+  max-width:1140px;
   background-color: blue;
+  &--sm{
+    max-width: 840px;
+  }
 }
 .text-right{
   text-align: right;
@@ -30,4 +33,10 @@ a{
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
+}
+.title-2{
+  font-size: 36px;
+  font-family: $font-accent;
+  color: $accent;
+  font-weight:700;
 }

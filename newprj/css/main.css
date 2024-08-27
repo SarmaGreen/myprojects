@@ -104,8 +104,11 @@ a:hover {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  width: 1140px;
+  max-width: 1140px;
   background-color: blue;
+}
+.container--sm {
+  max-width: 840px;
 }
 
 .text-right {
@@ -121,6 +124,13 @@ a:hover {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
+}
+
+.title-2 {
+  font-size: 36px;
+  font-family: "Playfair Display", serif;
+  color: #D4C17F;
+  font-weight: 700;
 }
 
 .header {
@@ -195,4 +205,84 @@ a:hover {
 }
 .info--tel::before {
   background-image: url("./../../IMG/phone.svg");
+}
+
+.benefits {
+  padding: 120px 0;
+}
+
+.benefits__row {
+  display: flex;
+  -moz-column-gap: 70px;
+       column-gap: 70px;
+}
+
+.benefits__item {
+  text-align: center;
+}
+
+.benefits__item-img {
+  margin-bottom: 53px;
+}
+
+.benefits__item-text {
+  font-stretch: 20px;
+  line-height: 1.35;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.appartments__title {
+  margin-bottom: 88px;
+}
+
+.card {
+  display: inline-block;
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(86, 86, 86, 0.8);
+  background: linear-gradient(100deg, rgba(36, 43, 51, 0) 0%, #242B33 100%);
+}
+.card::after {
+  content: "";
+  opacity: 0;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  right: 15px;
+  bottom: 15px;
+  border: 3px double rgba(255, 255, 255, 0.4);
+  transition: opacity 0.2s ease-in;
+}
+.card:hover {
+  color: #fff;
+}
+.card:hover::after {
+  opacity: 1;
+}
+
+.card__img {
+  transition: transform 0.2s ease-in;
+}
+
+.card:hover .card__img {
+  transform: scale(1.1);
+}
+
+.card__title {
+  position: absolute;
+  z-index: 10;
+  left: 50px;
+  right: 20px;
+  bottom: 0;
+  font-size: 24px;
 }/*# sourceMappingURL=main.css.map */
