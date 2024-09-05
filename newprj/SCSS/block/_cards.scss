@@ -5,6 +5,7 @@
   overflow: hidden;
   &::before{
     content: "";
+    z-index: 6;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -21,6 +22,7 @@
     content: "";
     opacity: 0;
     position: absolute;
+    z-index: 7;
     left: 15px;
     top: 15px;
     right: 15px;
@@ -36,10 +38,13 @@
   }
 }
 .card__img{
-  transition: transform 0.2s ease-in;
+  position: relative;
+  z-index: 5;
+  transition: all 0.2s ease-in;
 }
 .card:hover .card__img{
   transform: scale(1.1);
+  filter: contrast(110%) brightness(1.2) saturate(1.2);
 }
 .card__title{
   position: absolute;

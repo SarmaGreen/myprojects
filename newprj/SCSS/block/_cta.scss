@@ -1,0 +1,35 @@
+.cta{
+  padding: 180px 0;
+  background: linear-gradient(
+  180deg,
+  $dark 10.42%,
+  rgba(36, 43, 51, 0) 50.52%,
+  $dark 90.1%
+  ),
+  linear-gradient(0deg, rgba(36, 43, 51, 0.9), 
+  rgba(36, 43, 51, 0.90) 100%),
+  url('../../IMG/Rectangle.jpg'), #c4c4c4;
+}
+.cta__title{
+  margin-bottom: 17px;
+}
+.cta__wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.cta__text{
+  line-height: 1.5;
+}
+.form__input{
+  height: 50px;
+  padding: 12px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: $white;
+  font-size: 14px;
+  &::placeholder{
+    color: $placeholder;
+  }
+}
+
