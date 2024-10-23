@@ -143,11 +143,32 @@ a:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border: 1px black solid;
 }
+@media screen and (max-width: 999px) {
+  .header {
+    min-height: unset;
+    row-gap: 50px;
+  }
+}
 
 .header__top-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media screen and (max-width: 999px) {
+  .header__nav {
+    display: none;
+  }
+}
+
+.header__nav-btn {
+  display: none;
+}
+@media screen and (max-width: 999px) {
+  .header__nav-btn {
+    display: block;
+  }
 }
 
 .header__title {
@@ -158,6 +179,12 @@ a:hover {
   font-family: "Playfair Display", serif;
   color: #D4C17F;
   font-weight: 700;
+}
+@media screen and (max-width: 999px) {
+  .header__title {
+    font-size: 32px;
+    padding-bottom: 100px;
+  }
 }
 
 .header__title-icon {
@@ -172,6 +199,14 @@ a:hover {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
+@media screen and (max-width: 999px) {
+  .header__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
+}
 
 .nav {
   font-size: 14px;
@@ -182,6 +217,65 @@ a:hover {
   display: flex;
   -moz-column-gap: 40px;
        column-gap: 40px;
+}
+
+.nav-icon-btn {
+  --time: 0.1s;
+  --width: 40px;
+  --height: 30px;
+  --line-height: 1px;
+  --line-margin: 2;
+  --color: #fff;
+  height: var(--height);
+  width: var(--width);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-icon {
+  position: relative;
+  width: var(--width);
+  height: var(--line-height);
+  background-color: var(--color);
+}
+
+.nav-icon::before,
+.nav-icon::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: var(--width);
+  height: var(--line-height);
+  background-color: var(--color);
+  transition: transform var(--time) ease-in, top var(--time) linear var(--time);
+}
+
+.nav-icon::before {
+  top: calc(var(--line-height) * -8);
+}
+
+.nav-icon::after {
+  top: calc(var(--line-height) * 8);
+}
+
+.nav-icon.nav-icon--active {
+  background-color: transparent;
+}
+
+.nav-icon.nav-icon--active::before,
+.nav-icon.nav-icon--active::after {
+  top: 0;
+  transition: top var(--time) linear, transform var(--time) ease-in var(--time);
+}
+
+.nav-icon.nav-icon--active::before {
+  transform: rotate(45deg);
+}
+
+.nav-icon.nav-icon--active::after {
+  transform: rotate(-45deg);
 }
 
 .info {
@@ -195,10 +289,12 @@ a:hover {
   content: "";
   position: absolute;
   left: 0px;
-  top: 0px;
+  top: 50%;
   width: 21px;
   height: 21px;
+  transform: translate(0%, -50%);
   background-repeat: no-repeat;
+  background-position: center;
 }
 .info--map::before {
   background-image: url("./../../IMG/Group.svg");
@@ -206,9 +302,30 @@ a:hover {
 .info--tel::before {
   background-image: url("./../../IMG/phone.svg");
 }
+@media screen and (max-width: 999px) {
+  .info {
+    font-size: 14px;
+  }
+  .info--map, .info--tel {
+    padding-left: 26px;
+  }
+}
 
 .benefits {
+  position: relative;
   padding: 120px 0;
+}
+.benefits::after {
+  content: "II";
+  left: calc(50% + 555px);
+  transform: translate(-50%, 0%);
+  position: absolute;
+  top: 0;
+  line-height: 1.2;
+  z-index: -1;
+  opacity: 0.02;
+  font-size: 400px;
+  font-family: "Playfair Display", serif;
 }
 
 .benefits__row {
@@ -230,6 +347,22 @@ a:hover {
   line-height: 1.35;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+}
+
+.appartments {
+  position: relative;
+}
+.appartments::after {
+  content: "III";
+  right: calc(50% + 555px);
+  transform: translate(50%, 0%);
+  position: absolute;
+  top: 0;
+  line-height: 1.2;
+  z-index: -1;
+  opacity: 0.02;
+  font-size: 400px;
+  font-family: "Playfair Display", serif;
 }
 
 .appartments__title {
@@ -368,7 +501,20 @@ a:hover {
 }
 
 .video {
+  position: relative;
   text-align: center;
+}
+.video::after {
+  content: "IV";
+  left: calc(50% + 555px);
+  transform: translate(-50%, 0%);
+  position: absolute;
+  top: 0;
+  line-height: 1.2;
+  z-index: -1;
+  opacity: 0.02;
+  font-size: 400px;
+  font-family: "Playfair Display", serif;
 }
 
 .video__link {
@@ -404,7 +550,22 @@ a:hover {
 }
 
 .section-map {
+  position: relative;
   padding: 180px 0;
+}
+.section-map::after {
+  content: "V";
+  right: calc(50% + 555px);
+  transform: translate(50%, 0%);
+  position: absolute;
+  top: 0;
+  line-height: 1.2;
+  z-index: -1;
+  opacity: 0.02;
+  font-size: 400px;
+  font-family: "Playfair Display", serif;
+  line-height: 1;
+  top: 180px;
 }
 
 .section-map__title {
