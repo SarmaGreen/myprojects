@@ -20,6 +20,9 @@
 }
 .cta__text{
   line-height: 1.5;
+  p + p{
+    margin-top: 1em;
+  }
 }
 .form__input{
   height: 50px;
@@ -28,8 +31,35 @@
   background-color: rgba(255, 255, 255, 0.2);
   color: $white;
   font-size: 14px;
+  transition: background-color 0.2s ease-in;
   &::placeholder{
     color: $placeholder;
   }
+  &:focus{
+    background-color: rgba(255, 255, 255, 0.3);
+  }
 }
-
+.form__privacy{
+  font-size: 13px;
+  color: $muted;
+  text-align: center;
+  line-height:1.23 ;
+}
+.form__btn{
+  height: 50px;
+  padding: 12px;
+  font-size: 16px;
+  color: $white;
+  font-weight: 700;
+  text-align: center;
+  background-color: $accent;
+  transition: background-color 0.2s ease-in;
+  &:hover{
+    background-color: saturate($color: $accent, $amount: 10%);
+  }
+}
+.cta__form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px 30px;
+}
