@@ -38,8 +38,12 @@ a{
   font-family: $font-accent;
   color: $accent;
   font-weight:700;
+
+  @include mediaTablet{
+    font-size: 28px;
+  }
 }
 
 .no-scroll{
-  overflow: hidden;
+  overflow-y: hidden;
 }
