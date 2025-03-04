@@ -1,8 +1,8 @@
 // Base
-@import './base/_reset.scss';
-@import './base/_vars.scss';
-@import './base/_base.scss';
+@import './base/reset';
+@import './base/vars';
 @import './base/mixins.scss';
+@import './base/base.scss';
 
 //block
 @import './block/header';
@@ -13,6 +13,7 @@
 @import './block/appartments';
 @import './block/cards';
 @import './block/cta';
+@import './block/form';
 @import './block/video';
 @import './block/section-map';
 @import './block/feedback';
