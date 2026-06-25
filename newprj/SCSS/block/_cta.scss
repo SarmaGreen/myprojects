@@ -8,7 +8,7 @@
   ),
   linear-gradient(0deg, rgba(36, 43, 51, 0.9), 
   rgba(36, 43, 51, 0.90) 100%),
-  url('../../IMG/Rectangle.jpg'), #c4c4c4;
+  url('./../IMG/Rectangle.jpg'), #c4c4c4;
 
   @include mediaTablet{
     padding: 60px 0;

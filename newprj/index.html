@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LoftHouse</title>
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./libs/youtubeLightbox/youtubeLightbox.css">
+
 </head>
 <body>
 <header class="header">
@@ -40,7 +42,7 @@
 <div class="container">
     <h1 class="header__title">Жилой комплекс <br>в историческом центре
       <a href="#benefits">
-         <img src="/IMG/mouse.svg" class="header__title-icon" alt="mouse">
+         <img src="./IMG/mouse.svg" class="header__title-icon" alt="mouse">
         </a>
       </h1>
   </div>
@@ -139,7 +141,7 @@
   <section class="video">
     <div class="container">
       <h2 class="visually-hidden">Video loft house</h2>
-      <a href="" class="video__link">
+      <a href="https://www.youtube.com/watch?v=bhJNL9JUsnY" data-youtubeLightbox class="video__link">
         <img src="./IMG/Vectorplay.svg" class="video__icon" alt="">
         <img src="./IMG/video.jpg" class="video__img" alt="">
       </a>
@@ -213,18 +215,29 @@
             <li>E-mail: vip@lofthouse.ru</li>
           </ul>
           <ul class="footer__socials">
-            <li><a href=""><img src="/IMG/socials/youtube.svg" alt=""></a></li>
-            <li><a href=""><img src="/IMG/socials/vk.svg" alt=""></a></li>
-            <li><a href=""><img src="/IMG/socials/facebook.svg" alt=""></a></li>
-            <li><a href=""><img src="/IMG/socials/instagram.svg" alt=""></a></li>
+            <li><a href=""><img src="./IMG/socials/youtube.svg" alt=""></a></li>
+            <li><a href=""><img src="./IMG/socials/vk.svg" alt=""></a></li>
+            <li><a href=""><img src="./IMG/socials/facebook.svg" alt=""></a></li>
+            <li><a href=""><img src="./IMG/socials/instagram.svg" alt=""></a></li>
           </ul>
       </div> 
 
     </div>
   </div>
 </footer>
+
+<!-- youtube lightbox-->
+<div id="youtubelightbox" class="youtubelightbox">
+  <div class="youtubelightbox__centeredchild">
+      <div class="youtubelightbox__videowrapper">
+          <div id="youtubelightboxPlayer"></div>
+      </div>
+  </div>
+</div>
+
 <script src="./libs/phoneMask/mask.js"></script>
 <script src="./libs/phoneMask/mask_list.js"></script>
+<script src="./libs/youtubeLightbox/youtubeLightbox.js"></script>
 <script src="./js/main.js"></script>
 </body>
 </html>

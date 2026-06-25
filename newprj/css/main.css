@@ -440,7 +440,7 @@ a:hover {
 }
 @media screen and (max-width: 959px) {
   .appartments__cards {
-    grid-template-columns: repeat(auti-fit, minmax(290px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   }
 }
 
@@ -509,7 +509,7 @@ a:hover {
 
 .cta {
   padding: 180px 0;
-  background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9) 100%), url("../../IMG/Rectangle.jpg"), #c4c4c4;
+  background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9) 100%), url("./../IMG/Rectangle.jpg"), #c4c4c4;
 }
 @media screen and (max-width: 959px) {
   .cta {

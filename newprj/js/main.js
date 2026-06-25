@@ -11,3 +11,15 @@ navBtn.onclick = function (){
 
 /*Phone Mask*/
 mask('[data-tel-input]');
+
+// удаляем "+" если ничего не введено 
+
+const phoneInputs = document.querySelectorAll('[data-tel-input]');
+phoneInputs.forEach((input)=>{
+	input.addEventListener('input', ()=>{
+		if (input.value == '+') input.value = '';
+	})
+	input.addEventListener('blur', ()=>{
+		if (input.value == '+') input.value = '';
+	})
+});
