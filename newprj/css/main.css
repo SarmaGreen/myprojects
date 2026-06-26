@@ -597,7 +597,7 @@ a:hover {
   transition: background-color 0.2s ease-in;
 }
 .form__btn:hover {
-  background-color: #ddc676;
+  background-color: rgb(220.55, 197.7276470588, 118.45);
 }
 
 .video {

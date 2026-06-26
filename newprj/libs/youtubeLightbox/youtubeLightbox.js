@@ -1,4 +1,4 @@
-// ! Селектор для ссылок - на которых нужно вызывать youtubeLightbox
+//  Селектор для ссылок - на которых нужно вызывать youtubeLightbox
 const linksBtnsSelector = 'a[data-youtubeLightbox]';
 // const linksBtnsSelector = '.lightbox';
 
